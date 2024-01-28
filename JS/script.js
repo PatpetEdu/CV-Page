@@ -16,15 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
     
-    // Hantera klick på både huvudmenylänkar och hamburgemenylänkar
-   // mainMenuLinks.forEach(function (link) {
-     //   link.addEventListener('click', function (event) {
-       //     event.preventDefault();
-         //   var targetId = this.getAttribute('href').substring(1);
-           // scrollToTarget(targetId);
-     //   });
-   // });
-
     // Hantera klick på hamburgemenyikonen
     toggle.addEventListener('click', function () {
         if (myLinks.style.display === 'block') {

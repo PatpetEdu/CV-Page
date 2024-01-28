@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="JS/script.js" defer></script>
 </head>
@@ -43,19 +44,50 @@
         </a>
     </div>  
 
-
     <main>
-        <section id="portfolio">
-            <!-- Innehåll för Portfolio-sidan -->
+     
+        <section>
             <div class="port">
-            <h2>Min Portfolio</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum voluptas, ipsam deleniti culpa eveniet quis a natus perspiciatis rem consequuntur! Nam qui ducimus natus aspernatur eaque quae magni repudiandae eius.</p>
-            <img src ="Images/pexels-markus-spiske-2061168.jpg" alt="genericimage" class="image-1">
+                <h1>Min Portfolio</h1>
+                <ul class="project-list">
+                    <li class="project">
+                        <img src="Images/group.jpg" alt="image1" class="image-1">
+                        <a href="#projekt2-modal" class="info-btn">C# Grupp Projekt OOP</a>
+                    </li>
+                    <li class="project">
+                        <img src="Images/pexels-markus-spiske-2061168.jpg" alt="image1" class="image-1">
+                        <a href="#projekt1-modal" class="info-btn">Databas Projekt</a>
+                    </li>
+                </ul>
             </div>
         </section>
+    </main>
+    
+    <div class="popup" id="projekt1-modal">
+        <div class="popup-inner">
+            <h3>Databasprojekt</h3>
+            <p>
+                Indivudellt Databasprojekt.
+                Bygga en skoldatabas
+            </p>
+            <a href="#" class="button close-btn">Stäng</a>
+            <a href="https://github.com/PatpetEdu/Labb-3---SkolDatabas.git" class="button project-link">Till Projektet</a>
+        </div>
+    </div>
+    
+    <div class="popup" id="projekt2-modal">
+        <div class="popup-inner">
+            <h3>Grupp Projekt</h3>
+            <p>
+                Grupp projekt i C# OOP.
+                Vi har designat en enkel bank applikation
+            </p>
+            <a href="#" class="button close-btn">Stäng</a>
+            <a href="https://github.com/ericsallstrom/BankApp_GroupProject.git" class="button project-link">Till Projektet</a>
+        </div>
+    </div>
 
-
-
+    
     </main>
     </div>  
     <footer>
